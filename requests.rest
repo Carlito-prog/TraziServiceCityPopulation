@@ -1,9 +1,9 @@
 @baseUrl =http://localhost:5555/api/population
 
-GET {{baseUrl}}/state/Texas/city/Dallastam HTTP/1.1
+GET {{baseUrl}}/state/Texas/city/houston HTTP/1.1
 
 ########
-PUT {{baseUrl}}/state/Texas/city/Dallastam HTTP/1.1
+PUT {{baseUrl}}/state/Texas/city/Dallases HTTP/1.1
 Content-Type: text/plain
 
-444777
+5522777

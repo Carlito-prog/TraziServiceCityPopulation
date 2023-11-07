@@ -18,4 +18,6 @@
 
 # Depending on request it should return an object containing the correct population in the DB.
 
+# Using Rest Client vscode to test endpoints
+
 # APP STARTS AT SERVER.JS LVL

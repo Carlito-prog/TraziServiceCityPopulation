@@ -20,9 +20,6 @@ class App {
 
   // middleware for accepting json body, cors, logging
   initializeMiddleware() {
-    // this.express.use(express.json());
-    // this.express.use(express.urlencoded({ extended: true }));
-    // this.express.use(bodyParser.json());
     this.express.use(bodyParser.text());
     this.express.use(cors());
     this.express.use((req, res, next) => {
