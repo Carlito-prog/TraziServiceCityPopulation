@@ -42,7 +42,7 @@ class PopulationController {
       //connect to redis
       await insertRedisVal(cityState, population);
 
-      res.status(200).json({ population });
+      res.status(200).json({ population: population });
     } catch (err) {
       console.log(err);
       res.status(400).send(err);
@@ -90,9 +90,9 @@ class PopulationController {
 
       // return 201 if new doc was created and 200 if it already exist
       if (upsertCount === 0) {
-        res.status(200).json(requestBody.population);
+        res.status(200);
       } else {
-        res.status(201).json(requestBody.population);
+        res.status(201);
       }
     } catch (err) {
       console.log(err);
