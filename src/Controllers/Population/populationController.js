@@ -90,9 +90,9 @@ class PopulationController {
 
       // return 201 if new doc was created and 200 if it already exist
       if (upsertCount === 0) {
-        res.status(200);
+        res.status(200).send();
       } else {
-        res.status(201);
+        res.status(201).send();
       }
     } catch (err) {
       console.log(err);

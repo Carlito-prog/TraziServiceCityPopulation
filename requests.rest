@@ -3,7 +3,7 @@
 GET {{baseUrl}}/state/Texas/city/houston HTTP/1.1
 
 ########
-PUT {{baseUrl}}/state/Texas/city/Dallases HTTP/1.1
+PUT {{baseUrl}}/state/Texas/city/Dallas HTTP/1.1
 Content-Type: text/plain
 
-5522777
+5522888
